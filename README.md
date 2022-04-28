@@ -1,5 +1,6 @@
 # stubborn-pdf-bw-inspector
-Helps to determine how many pages of pdfs were black and white vs colour
+Helps to determine how many pages of pdfs were black and white vs colour.
+
 If you have word documents, consider using https://github.com/AlJohri/docx2pdf to convert them.
 
 use the bash command here (inspired by post from Kurt Pfeifle https://stackoverflow.com/a/25645224/18724266):
