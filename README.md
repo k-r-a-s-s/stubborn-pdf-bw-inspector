@@ -9,6 +9,7 @@ for i in *.pdf; gs -q  -o - -sDEVICE=inkcov "$i" | grep -v '^ 0.00000  0.00000  
 
 in the folder with pdf(s) to output text files containing the CMYK data in to a text file named after the name of the pdf. Requires ghostscript. 
 
-Then use this python file to parse the text file(s). It compares and outputs a summary CSV totally the number black & white / colour pages
+Then use this python file to parse the text file(s). It compares the CMYK looking for C==M==Y and assumes that this is b&w. There may be some false psotives and false negatives with this method, but has been very consistent with my sample pdfs.
+The output is a summary CSV tallying the number black & white / colour pages.
 
 
